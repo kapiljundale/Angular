@@ -29,18 +29,24 @@ show(value){
 -------------------------------------------------------------
 
 once we have requirment to pass data from one comp. to another then
-we are using @input decorator and @output decorator.
+we are using @input decorator and @output decorator/property.
 
 -If there is relationship between two component i.e parent and child 
 	Ex- App comp. calling all other comp. by using selector 
 		App comp.-Parent
 		other comp-Child.
 
+*********************
 -@input()- this will pass the data from parent to child component.
-	Ex.
+	Ex.Parent-----To-----Child
 		1. creat variable in parant compt. TS File
 		2. in paraent compt. pass variable in child selector using property binding IN HTML FILE.
 		3. in child TS FILE call variable by using @input variableName:string
 		4. In child TS File in NgOnint method call that variable.
- 
--@output()- +eventemitter this will pass the data from child to parent compt.
+
+*********************
+-@output()- +EventEmitter this will pass the data from child to parent compt.
+	Ex. Child----To-------Parent
+-----------------------------------------------------
+NEXT DAY
+
