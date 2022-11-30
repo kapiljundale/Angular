@@ -1,7 +1,7 @@
 Attribute directive:
 --------------------
 we can change behaviour or looks of the dom element
-
+------------------------------------------------------------------
 ngStyle:
 	-It is used for for setting the style attribute of dom element
 	-we can set more than one property
@@ -10,7 +10,7 @@ syntax:
     attridirective works!
 </div> 
 
-
+------------------------------------------------------------------
 ngClass:
 	-It is used for for setting the style attribute on class
  EX::
