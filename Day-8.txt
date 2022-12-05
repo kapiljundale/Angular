@@ -2,15 +2,14 @@
 	Ex. Child----To-------Parent
 -----------------------------------------------------
 1.in child HTML file creat one element and apply event on it.
-		<p>Enter food name</p>
-
+<p>Enter food name</p>
 <!-- steps 1 user entering foods name   -->
 <input type="text" (keyup.enter)="addtofood(item.value)" #item>
 --------------------------------------------------------
 2.in child TS file creat a function and @output property.
-			@Output() foodevent: EventEmitter<string> = new EventEmitter<string>();
+@Output() foodevent: EventEmitter<string> = new EventEmitter<string>();
 			
-			addtofood(value) {
+addtofood(value) {
 // foodevent is nothing but your custom event (foodevent)
     this.foodevent.emit(value);
   }
